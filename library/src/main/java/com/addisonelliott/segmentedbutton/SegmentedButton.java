@@ -524,14 +524,15 @@ public class SegmentedButton extends View
         if (Build.VERSION.SDK_INT >= VERSION_CODES.M)
         {
             textStaticLayout = StaticLayout.Builder
-                .obtain(text, 0, text.length(), textPaint, textWidth)
-                .setMaxLines(linesCount)
-                .setEllipsize(ellipsize)
-                .build();
+                    .obtain(text, 0, text.length(), textPaint, textWidth)
+                    .setMaxLines(linesCount)
+                    .setEllipsize(ellipsize)
+                    .setAlignment(Layout.Alignment.ALIGN_CENTER)
+                    .build();
         }
         else
         {
-            textStaticLayout = new StaticLayout(text, textPaint, textWidth, Layout.Alignment.ALIGN_NORMAL, 1.0f, 0, false);
+            textStaticLayout = new StaticLayout(text, textPaint, textWidth, Layout.Alignment.ALIGN_CENTER, 1.0f, 0, false);
         }
     }
 

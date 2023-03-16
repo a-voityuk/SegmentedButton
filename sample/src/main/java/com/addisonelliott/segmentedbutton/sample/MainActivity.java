@@ -484,7 +484,7 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         buttonGroup.addView(yesButton);
 
         SegmentedButton maybeButton = new SegmentedButton(this);
-        maybeButton.setText("Maybe");
+        maybeButton.setText("Maybe yes maybe no");
         maybeButton.setPadding((int)dpToPx(8), (int)dpToPx(8), (int)dpToPx(8), (int)dpToPx(8));
         maybeButton.setLayoutParams(new LayoutParams(0, LayoutParams.WRAP_CONTENT, 1));
         maybeButton.setTextColor(Color.BLACK);

@@ -61,7 +61,7 @@ afterEvaluate {
 }
 
 dependencies {
-    implementation "androidx.appcompat:appcompat:1.5.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "androidx.interpolator:interpolator:1.0.0"
     implementation "androidx.core:core:1.9.0"
     implementation 'com.github.addisonElliott:RippleDrawable:3.0.0'
